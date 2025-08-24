@@ -10,7 +10,7 @@ A Python application that extracts content from webpages and analyzes it using a
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.10+
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) server running locally
 - /nothink LLM Models
 
@@ -36,7 +36,14 @@ A Python application that extracts content from webpages and analyzes it using a
 
 3. Install dependencies:
    ```bash
+   # Option 1: Install with pip (basic dependencies)
    pip install -r requirements.txt
+
+   # Option 2: Install with modern packaging (recommended)
+   pip install -e .
+
+   # Option 3: Install with fine-tuning dependencies
+   pip install -e ".[finetune]"
    ```
 
 4. Start the llama.cpp server:
@@ -103,8 +110,8 @@ You can configure the application using command-line arguments or environment va
 
 3. Install Python version:
    ```bash
-   pyenv install 3.10.0
-   pyenv global 3.10.0
+   pyenv install 3.10
+   pyenv global 3.10
    ```
 
 4. Install dependencies:

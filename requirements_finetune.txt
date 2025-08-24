@@ -1,0 +1,24 @@
+# Core dependencies for fine-tuning
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+bitsandbytes>=0.40.0
+peft>=0.4.0
+datasets>=2.14.0
+
+# Data processing
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# Utilities
+tqdm>=4.65.0
+numpy>=1.24.0
+packaging>=21.3
+
+# For inference
+sentencepiece>=0.1.99
+tokenizers>=0.13.3
+
+# Python version requirement
+# Requires Python 3.10+ for modern features and security
+# See: https://devguide.python.org/versions/
