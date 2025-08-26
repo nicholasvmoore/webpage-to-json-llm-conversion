@@ -98,7 +98,7 @@ Remove escape characters.
                 "temperature": 0.1
             }
 
-            response = self.session.post(self.llm_url, json=data, timeout=60)
+            response = self.session.post(self.llm_url, json=data, timeout=300)
             response.raise_for_status()
 
             result = response.json()
